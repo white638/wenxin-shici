@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: wenfu-lowpoint
+expected_outcome: |
+  写一篇宋调文赋（骈散兼行、分段转韵，篇幅约 250–500 字），贴合辞职返乡三个月的“悬停迷茫感”，以具象与喻象化开而结尾留余味，不喊现代正能量口号、无白话腔、经 meter.py check --form 赋 检视句脚与韵段。

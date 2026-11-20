@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: teach-rusheng
+expected_outcome: |
+  清晰讲明中古入声来源与普通话派入现状，给出准确可操作的判断规律（方言、声母 b/d/g/j/zh/z 阳平字等，不带错谬的“整体认读 -i 非入声”规则），并以 meter.py lookup --rusheng 现场验真示范。

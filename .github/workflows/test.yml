@@ -1,0 +1,24 @@
+name: Test Meter
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run regression test suite
+        run: python tools/test_meter.py
+      - name: CLI smoke checks
+        run: |
+          python wenxin-shici/scripts/meter.py check "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。"
+          python wenxin-shici/scripts/meter.py lookup --rusheng "风急天高猿啸哀，渚清沙白鸟飞回"
+          python wenxin-shici/scripts/meter.py cipai
+          python wenxin-shici/scripts/dupcheck.py --find 大鹏一日同风起

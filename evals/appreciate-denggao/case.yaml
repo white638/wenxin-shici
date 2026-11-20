@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: appreciate-denggao
+expected_outcome: |
+  对杜甫《登高》作系统赏析：原文无错讹，结构涵盖章法、意象炼字、用典溯源、声律情感层次与诗史定位，结合脚本验证格律结论（七律仄起首句入韵、上平十灰）。
